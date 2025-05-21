@@ -25,7 +25,7 @@ Example: "1,-2,-4" → negative numbers not allowed -2,-4
 This is solved using the following TDD workflow:
 
 - Followed test first approach.
-- Write the simplest failing test.
+- Write the simplest test cases to cover scenarios.
 - Write the minimum code to make the test pass.
 
 ### Structure
