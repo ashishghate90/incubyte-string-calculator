@@ -39,14 +39,14 @@ This is solved using the following TDD workflow:
 ### Getting Started
 - Install ruby-3.2.2(If not available on your system)
 
-- Clone the repository
-git clone https://github.com/ashishghate90/incubyte-string-calculator.git
+- Clone the repository<br>
+  git clone https://github.com/ashishghate90/incubyte-string-calculator.git
 
-- Go inside the repository
-cd string-calculator-tdd
+- Go inside the repository<br>
+  cd string-calculator-tdd
 
-- Perform bundle install, to install dependencies.
+- Perform bundle install, to install dependencies.<br>
 bundle install
 
-- run all specs
+- run all specs<br>
 rspec spec/
