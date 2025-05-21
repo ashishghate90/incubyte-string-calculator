@@ -2,8 +2,14 @@ class StringCalculator
   def add(numbers)
     return 0 if numbers.empty?
 
-    return numbers.to_i unless numbers.include?(",")
+    delimiter = /,|\n/
+    if numbers.start_with?("//")
+      parts = numbers.split("\n", 2)
+      custom_delimiter = Regexp.escape(parts[0][2..])
+      delimiter = /#{custom_delimiter}/
+      numbers = parts[1]
+    end
 
-    numbers.split(/,|\n/).map(&:to_i).sum
+    numbers.split(delimiter).map(&:to_i).sum
   end
 end
